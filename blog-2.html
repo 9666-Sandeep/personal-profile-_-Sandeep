@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Understanding the BUPSP App - Chinthal Sandeep</title>
+
+    <!-- Link to your main portfolio CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Google Fonts for Ghost-like typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styling specifically for the blog reading experience -->
+    <style>
+      body {
+        background-color: #121212;
+        color: #d6d6d6;
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+      }
+      .blog-container {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      .back-btn {
+        display: inline-block;
+        color: #ffdb70;
+        text-decoration: none;
+        font-size: 16px;
+        margin-bottom: 40px;
+        font-weight: 600;
+      }
+      .post-header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .post-title {
+        font-family: "Inter", sans-serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #fafafa;
+        line-height: 1.2;
+        margin-bottom: 15px;
+      }
+      .post-meta {
+        font-size: 0.95rem;
+        color: #a3a3a3;
+      }
+      .post-content {
+        font-family: "Lora", serif;
+        font-size: 1.15rem;
+        line-height: 1.8;
+      }
+      .post-content h2 {
+        font-family: "Inter", sans-serif;
+        color: #fafafa;
+        font-size: 1.8rem;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+      .post-content h3 {
+        font-family: "Inter", sans-serif;
+        color: #e0e0e0;
+        font-size: 1.4rem;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+      .post-content p {
+        margin-bottom: 25px;
+      }
+      .post-content ul {
+        margin-bottom: 25px;
+        padding-left: 20px;
+      }
+      .post-content li {
+        margin-bottom: 10px;
+      }
+      .post-content a {
+        color: #ffdb70;
+        text-decoration: underline;
+      }
+      .post-figure {
+        margin: 40px 0;
+        text-align: center;
+      }
+      .post-figure img {
+        max-width: 100%;
+        border-radius: 8px;
+        height: auto;
+      }
+      .post-figcaption {
+        font-family: "Inter", sans-serif;
+        font-size: 0.85rem;
+        color: #a3a3a3;
+        margin-top: 10px;
+        font-style: italic;
+      }
+      .metadata-block {
+        background-color: #1e1e1f;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        font-family: "Inter", sans-serif;
+        font-size: 0.95rem;
+      }
+      .metadata-block p {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="blog-container">
+      <!-- Back Button -->
+      <a href="index.html" class="back-btn">&larr; Back to Portfolio</a>
+
+      <!-- Changed from article to div to prevent CSS conflict -->
+      <div class="post">
+        <!-- Blog Header -->
+        <header class="post-header">
+          <h1 class="post-title">
+            Understanding the BUPSP App - Technology in Field Practice
+          </h1>
+          <div class="post-meta">
+            Chinthal Sandeep • 31 May 2025 • 4 min read
+          </div>
+        </header>
+
+        <!-- Main Header Image -->
+        <figure class="post-figure">
+          <img
+            src="./assets/images/bupsp-header.jpg"
+            alt="Bengaluru Urban Poor Special Project logo"
+          />
+          <figcaption class="post-figcaption">
+            Image courtesy of citizensrights.in official website
+          </figcaption>
+        </figure>
+
+        <!-- Blog Content -->
+        <div class="post-content">
+          <div class="metadata-block">
+            <p><strong>Date:</strong> 16 May 2025</p>
+            <p><strong>Field Site:</strong> Maarga Office, Kormangala</p>
+            <p><strong>Phase 1:</strong> Day 2</p>
+            <p>
+              <a href="#" target="_blank"
+                >To know more about Maarga Foundation</a
+              >
+            </p>
+          </div>
+
+          <p>
+            Today's field session offered a deep dive into the technical core of
+            Maarga's operations, the Bangalore Urban Poor Special Project
+            (BUPSP) App, which has since evolved into the Janadhikara Project
+            App. Unlike Day 1, which was filled with community stories and field
+            movement, today's interaction was more analytical. The team at
+            Maarga patiently walked us through the app's interface, structure,
+            and real world use cases.
+          </p>
+
+          <p>
+            We learned that the app is used exclusively by authorized community
+            organizers (COs), who each have area specific logins—this ensures
+            that every CO can only access data relevant to their slum clusters,
+            reinforcing data privacy and accountability. The app is central to
+            how Maarga:
+          </p>
+
+          <ul>
+            <li>Surveys households</li>
+            <li>Applies for government Documents</li>
+            <li>Tracks entitlements</li>
+            <li>Follows up on approvals or rejections</li>
+          </ul>
+
+          <p>
+            It acts like a personal case file system for every family, but on a
+            digital platform.
+          </p>
+
+          <!-- Content Image 1 -->
+          <figure class="post-figure">
+            <img
+              src="./assets/images/app-dashboard.jpg"
+              alt="BUPSP App Dashboard and Status Tracker"
+            />
+            <figcaption class="post-figcaption">
+              App Dashboard & Scheme Status Tracking: This screenshot shows the
+              main dashboard of the Janadhikara (formerly BUPSP) app, with core
+              modules like Survey, Schemes, Scheme Updates, and Family Member
+              data. The second panel highlights how the app tracks the real-time
+              status of document submissions—from "Submitted" to "In
+              Process"—making follow-ups with government departments transparent
+              and structured.
+            </figcaption>
+          </figure>
+
+          <h2>How the Janadhikara (BUPSP) App Works</h2>
+
+          <p>Here's what impressed us technically:</p>
+
+          <h3>User Access and Role Based Permissions</h3>
+          <ul>
+            <li>
+              Every Community Organiser (CO) has a personalized login ID and
+              password.
+            </li>
+            <li>
+              Access is geo-restricted; COs only see data for the slum areas
+              they are responsible for.
+            </li>
+            <li>
+              This model ensures data decentralization while maintaining
+              accountability and data privacy.
+            </li>
+            <li>
+              Each user has a digital footprint (date of entry, ID, GPS
+              location), which supports audit trails.
+            </li>
+          </ul>
+
+          <h3>Household-Centric Architecture</h3>
+          <ul>
+            <li>
+              <strong>Unique Family ID:</strong> Every household has a unique
+              ID, where each household has a dedicated record.
+            </li>
+            <li>
+              A typical family profile includes:
+              <ul>
+                <li>Names, phone numbers, ward details</li>
+                <li>Language, caste, contact, income, education</li>
+                <li>Head of household and member details</li>
+                <li>
+                  Scheme applications (e.g., pensions, AAY cards, DBT schemes)
+                </li>
+                <li>Document ownership (Aadhaar, PAN, Ration Card)</li>
+                <li>Status updates</li>
+                <li>Status on multiple government schemes</li>
+                <li>Surveyor's name and date of data entry</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h3>Visual Cues with Color Codes</h3>
+          <p>
+            The app interface includes predefined colors to distinguish family
+            roles:
+          </p>
+          <ul>
+            <li><strong>Purple</strong> = Head of the family</li>
+            <li><strong>Blue</strong> = Other family members</li>
+          </ul>
+
+          <p>
+            <strong>Filters and Dashboard:</strong> Staff can filter data by
+            ward, slum name, or document status, allowing quick searches and
+            bulk follow-ups.
+          </p>
+
+          <!-- Content Image 2 -->
+          <figure class="post-figure">
+            <img
+              src="./assets/images/color-coded-roles.jpg"
+              alt="Household Scheme View with Color-Coded Roles"
+            />
+            <figcaption class="post-figcaption">
+              Household Scheme View with Color-Coded Roles: This interface
+              provides a detailed view of household records within the app. Each
+              family is assigned a Unique Family ID and categorized into head
+              (purple) and members (blue). Community Organizers use this section
+              to view individual details, check education levels, and track
+              progress on government scheme applications—all color-coded for
+              easy identification.
+            </figcaption>
+          </figure>
+
+          <h2>Backend Integration with Government Systems</h2>
+
+          <p>
+            <strong>Scheme Tracker Integration:</strong> For many government
+            services (like caste certificates or scholarships), the app
+            redirects to official portals. Using the family's ID, the staff can:
+          </p>
+          <ul>
+            <li>Tracks progress (Approved / In Progress / Cancelled)</li>
+            <li>
+              Shows reasons for rejection (e.g., missing rental agreement, name
+              mismatch)
+            </li>
+            <li>Enables re-application or escalation by COs</li>
+          </ul>
+
+          <h2>Offline-first Design with Syncing Capabilities</h2>
+
+          <p>
+            Field teams work in areas with poor connectivity, so the app is
+            designed for offline data entry.
+          </p>
+          <ul>
+            <li>
+              Key features include:
+              <ul>
+                <li>
+                  <strong>Master Download:</strong> Preloads updated
+                  questions/scheme modules
+                </li>
+                <li>
+                  <strong>Bulk Sync & Upload:</strong> Pushes local data to the
+                  central server when back online
+                </li>
+                <li>
+                  <strong>GPS Activation:</strong> Ensures location verification
+                  during key operations (like scholarship form submission)
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Content Image 3 -->
+          <figure class="post-figure">
+            <img
+              src="./assets/images/gps-integration.jpg"
+              alt="GPS Integration screens"
+            />
+            <figcaption class="post-figcaption">
+              GPS Integration for Accurate Data Mapping: To ensure field data
+              integrity, the Janadhikara app requires GPS activation before data
+              entry. This image captures the multi-step location-setting
+              process—from enabling device location to selecting the specific
+              ward, slum, and settlement. Accurate GPS tagging ensures that
+              survey entries are reliably mapped to real locations.
+            </figcaption>
+          </figure>
+
+          <h2>Reflection: More Than an App A Layered Ecosystem</h2>
+
+          <p>
+            This session made me rethink how I view technology in social work.
+            Often we think of tech tools as "efficient" or "fast." But what
+            stood out today was how deeply layered and human centered this app
+            actually is.
+          </p>
+
+          <p>Yes, it tracks data. But its real purpose is:</p>
+          <ul>
+            <li>To reduce exclusion</li>
+            <li>To make the invisible visible</li>
+            <li>To equip grassroots workers with structure and evidence</li>
+          </ul>
+
+          <p>We learned that in the early days, the app faced:</p>
+          <ul>
+            <li>Syncing issues</li>
+            <li>Server slowdowns</li>
+            <li>
+              Community distrust ("What benefit will I get? Why are you
+              collecting data again?")
+            </li>
+          </ul>
+
+          <p>
+            Despite those hurdles, the app gradually became a field companion
+            for COs. With proper training and persistent community engagement,
+            even something as complex as digital governance became approachable
+            and actionable.
+          </p>
+
+          <p>
+            Another powerful takeaway: the app doesn't just "record" reality—it
+            helps shape it. By making people countable in the system, it also
+            makes their rights claimable.
+          </p>
+
+          <h2>Wider Lens: Tech and Social Justice</h2>
+
+          <p>
+            The Janadhikara App is not just a tool—it's a manifestation of a
+            rights based digital framework. It helps bridge three important
+            gaps:
+          </p>
+          <ol>
+            <li>
+              <strong>Information Gap:</strong> Helping families know what they
+              are eligible for
+            </li>
+            <li>
+              <strong>Access Gap:</strong> Helping apply for schemes and track
+              them
+            </li>
+            <li>
+              <strong>Accountability Gap:</strong> Creating data to show what's
+              working and what's not
+            </li>
+          </ol>
+
+          <p>
+            In a country where many slum residents lack digital literacy, formal
+            education, or even ID proof, apps like this—when used responsibly
+            and ethically—can shift the power slightly toward the people, not
+            just the system.
+          </p>
+
+          <h2>Final Thought: This App Is a Public Tech Infrastructure</h2>
+
+          <p>
+            The Janadhikara app isn't just a tool, it's a microcosm of digital
+            public infrastructure for vulnerable populations. It bridges the
+            last-mile disconnect between:
+          </p>
+          <ul>
+            <li>Schemes that exist on paper</li>
+            <li>And people who are often excluded from them</li>
+          </ul>
+
+          <p>
+            By combining tech, trust, and field presence, the app has evolved
+            into a reliable tool that lets:
+          </p>
+          <ul>
+            <li>Communities be counted</li>
+            <li>Schemes be tracked</li>
+            <li>Rights be claimed.</li>
+          </ul>
+
+          <p>
+            <em
+              >Note: All screenshots and field-based content in this post have
+              been documented with the informed consent of the Community
+              Organisers (COs) involved in the demonstration. These visuals are
+              shared for academic and reflective learning purposes, and we
+              remain committed to respecting the dignity, privacy, and efforts
+              of those working at the grassroots.</em
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
