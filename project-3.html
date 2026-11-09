@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Issue Tracker - Chinthal Sandeep</title>
+
+    <!-- Links to your existing portfolio styling -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="
+      background-color: #121212;
+      color: #d6d6d6;
+      font-family: &quot;Poppins&quot;, sans-serif;
+      padding: 40px 20px;
+    "
+  >
+    <!-- Added display: block; to perfectly stack the text -->
+    <main
+      style="
+        display: block;
+        max-width: 900px;
+        margin: 0 auto;
+        background: #1e1e1f;
+        padding: 40px;
+        border-radius: 14px;
+        border: 1px solid #383838;
+      "
+    >
+      <!-- Back to Portfolio Button -->
+      <a
+        href="./index.html"
+        style="
+          display: inline-block;
+          color: #ffdb70;
+          text-decoration: none;
+          border: 1px solid #ffdb70;
+          padding: 8px 16px;
+          border-radius: 8px;
+          margin-bottom: 30px;
+          transition: 0.3s;
+        "
+      >
+        &larr; Back to Portfolio
+      </a>
+
+      <!-- Main Header Image -->
+      <div style="margin-bottom: 40px; text-align: center">
+        <!-- Make sure you save your generated image as community-issue-tracker.png in your images folder -->
+        <img
+          src="./assets/images/community-issue-tracker.png"
+          alt="Community Issue Tracker Interface"
+          style="
+            max-width: 100%;
+            border-radius: 12px;
+            border: 1px solid #383838;
+            display: block;
+            margin: 0 auto;
+          "
+        />
+      </div>
+
+      <!-- Metadata Box -->
+      <div
+        style="
+          background: #2b2b2c;
+          padding: 20px;
+          border-radius: 12px;
+          margin-bottom: 40px;
+          border: 1px solid #383838;
+        "
+      >
+        <p style="margin-bottom: 10px">
+          <strong>Project Name:</strong> Community Issue Tracker
+        </p>
+        <p style="margin-bottom: 10px">
+          <strong>Framework:</strong> Frappe Framework / Web Development
+        </p>
+        <p style="margin-bottom: 10px">
+          <strong>Author:</strong> Chinthal Sandeep
+        </p>
+        <p style="margin-bottom: 0">
+          <strong>Focus Area:</strong><br />
+          <span style="color: #ffdb70"
+            >Technology for Social Good & Civic Tech</span
+          >
+        </p>
+      </div>
+
+      <!-- Section 1: Overview -->
+      <h2 style="color: #ffdb70; margin-bottom: 15px">Project Overview</h2>
+      <p style="margin-bottom: 30px">
+        Civic engagement relies on seamless communication between citizens and
+        the organizations that serve them. To facilitate this, I developed the
+        <strong>Community Issue Tracker</strong>, a dynamic web application
+        designed to empower community members to report local infrastructural
+        and civic issues—such as broken streetlights, potholes, or waste
+        management problems. Built using the Frappe Framework, this platform
+        bridges the gap between citizens reporting problems and administrative
+        staff resolving them.
+      </p>
+
+      <!-- Section 2: Architecture & Data Models -->
+      <h2 style="color: #ffdb70; margin-bottom: 15px">
+        System Architecture & DocTypes
+      </h2>
+      <p style="margin-bottom: 15px">
+        To ensure the database was highly relational and scalable, I engineered
+        the backend using two primary Data Models (DocTypes):
+      </p>
+      <ul style="color: #d6d6d6; padding-left: 20px; margin-bottom: 30px">
+        <li style="margin-bottom: 15px">
+          <strong style="color: #ffdb70">The "Issue" DocType:</strong> This is
+          the core engine of the application. It captures everything needed for
+          a rapid response, including an auto-generated <em>Issue ID</em> (e.g.,
+          ISSUE-00001), <em>Title</em>, and a rich <em>Text Editor</em> for
+          descriptions. Crucially, it integrates <em>Geolocation</em> mapping so
+          staff know exactly where the problem is. It also links highly
+          relational fields like <em>Reported By</em>, <em>Assigned To</em>, and
+          <em>Status</em> (Submitted, In Progress, Resolved).
+        </li>
+        <li style="margin-bottom: 0">
+          <strong style="color: #ffdb70">The "Issue Category" DocType:</strong>
+          A secondary master-data model used to standardize ticketing. It allows
+          administrators to define and describe categories like
+          "Infrastructure", "Sanitation", or "Safety", keeping the database
+          organized and query-friendly.
+        </li>
+      </ul>
+
+      <!-- Section 3: Access Control -->
+      <h2 style="color: #ffdb70; margin-bottom: 15px">
+        Role-Based Access Control (RBAC)
+      </h2>
+      <p style="margin-bottom: 15px">
+        Data security and workflow integrity are critical for public-facing
+        portals. I implemented strict role-based permissions to ensure users
+        only see what they need to:
+      </p>
+      <ul style="color: #d6d6d6; padding-left: 20px; margin-bottom: 30px">
+        <li style="margin-bottom: 10px">
+          <strong>Community Resident:</strong> Granted Create and Read
+          permissions restricted to their own data. They can submit new tickets
+          and track the real-time status of their specific reports.
+        </li>
+        <li style="margin-bottom: 10px">
+          <strong>Organization Staff:</strong> Granted full administrative
+          privileges (Read, Write, Create, Delete). This allows backend
+          personnel to update statuses, assign workloads to specific team
+          members, and moderate the portal.
+        </li>
+      </ul>
+
+      <!-- Section 4: Dashboard & Reporting -->
+      <h2 style="color: #ffdb70; margin-bottom: 15px">Dashboard & Analytics</h2>
+      <p style="margin-bottom: 15px">
+        For the Organization Staff, efficiency is key. I designed an interactive
+        <strong>Issues Dashboard</strong> that provides a bird's-eye view of
+        civic health. It features live metric cards for
+        <em>Total New Issues</em> and a visual breakdown chart comparing issues
+        by their current status. Below the charts, a dynamic list highlights
+        <em>Unassigned Issues</em>, ensuring no citizen's report slips through
+        the cracks.
+      </p>
+      <p style="margin-bottom: 30px">
+        Additionally, I built an <strong>All Issues Report</strong>—a highly
+        filterable matrix containing columns like Issue ID, Category, Date
+        Reported, and Assignment data, allowing staff to export and analyze
+        long-term civic trends.
+      </p>
+
+      <!-- Section 5: The Workflow -->
+      <h3
+        style="
+          color: #fafafa;
+          font-size: 1.4rem;
+          margin-top: 30px;
+          margin-bottom: 20px;
+        "
+      >
+        The Resolution Workflow in Action
+      </h3>
+      <ul style="list-style-type: none; padding-left: 0; margin-bottom: 50px">
+        <li style="margin-bottom: 15px">
+          <span style="display: block; margin-bottom: 5px"
+            ><strong style="color: #ffdb70">1. Submission:</strong></span
+          >
+          A Community Resident logs securely into the portal, drops a
+          Geolocation pin on the map, uploads the issue details, and submits.
+          The system defaults the ticket to <em>"Submitted"</em>.
+        </li>
+        <li style="margin-bottom: 15px">
+          <span style="display: block; margin-bottom: 5px"
+            ><strong style="color: #ffdb70"
+              >2. Triage & Assignment:</strong
+            ></span
+          >
+          Organization Staff monitor the live dashboard, spot the new ticket in
+          the "Unassigned" queue, allocate it to a specific field worker, and
+          shift the status to <em>"In Progress"</em>.
+        </li>
+        <li style="margin-bottom: 15px">
+          <span style="display: block; margin-bottom: 5px"
+            ><strong style="color: #ffdb70"
+              >3. Resolution & Documentation:</strong
+            ></span
+          >
+          Once the physical work (like fixing the pothole) is completed, the
+          staff member updates the ticket with detailed
+          <em>Resolution Details</em> and officially marks it as
+          <em>"Resolved"</em>.
+        </li>
+        <li style="margin-bottom: 0">
+          <span style="display: block; margin-bottom: 5px"
+            ><strong style="color: #ffdb70">4. Transparency:</strong></span
+          >
+          The dashboard analytics and reports update autonomously in real-time,
+          and the citizen can log in to see that their community has been
+          improved.
+        </li>
+      </ul>
+
+      <hr style="border-color: #383838; margin-bottom: 40px" />
+
+      <!-- Section 6: Advanced Exploration (Workflows) -->
+      <h2 style="color: #ffdb70; margin-bottom: 15px">
+        Advanced Feature: Workflow State Machine
+      </h2>
+      <p style="margin-bottom: 15px">
+        For the exploration component of this project, I chose to implement
+        complex Workflows. While the standard Frappe framework allows users to
+        save and edit documents using simple permissions, it does not inherently
+        enforce a strict business process. To prevent unauthorized status
+        changes (e.g., jumping straight from "Submitted" to "Resolved"), I
+        engineered a strict Workflow state machine to govern the lifecycle of
+        every "Issue" document.
+      </p>
+      <ul style="color: #d6d6d6; padding-left: 20px; margin-bottom: 30px">
+        <li style="margin-bottom: 10px">
+          <strong style="color: #ffdb70">Process Control:</strong> Designed a
+          linear path (Submitted → In Progress → Resolved) that strictly
+          prevents users from skipping steps.
+        </li>
+        <li style="margin-bottom: 10px">
+          <strong style="color: #ffdb70">Role-Based Transitions:</strong>
+          Utilized Transition Rules so that moving a ticket from "Submitted" to
+          "In Progress" (via the "Start Work" action) is strictly restricted to
+          the Organization Staff role.
+        </li>
+        <li style="margin-bottom: 10px">
+          <strong style="color: #ffdb70">Data Integrity & Locking:</strong>
+          Configured the "Resolved" state with DocStatus: 1 (Submitted). Once an
+          issue is marked as resolved, it becomes strictly read-only, preventing
+          any tampering with the historical record.
+        </li>
+      </ul>
+
+      <!-- Section 7: Challenges -->
+      <h2 style="color: #ffdb70; margin-bottom: 15px">
+        Development Challenges & Troubleshooting
+      </h2>
+      <p style="margin-bottom: 25px">
+        Implementing Workflows introduced several backend complexities. Here is
+        how I debugged and resolved them:
+      </p>
+
+      <div
+        style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 40px"
+      >
+        <!-- Challenge A -->
+        <div
+          style="
+            flex: 1 1 250px;
+            background: #2b2b2c;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #383838;
+          "
+        >
+          <h4 style="color: #fafafa; margin-top: 0; margin-bottom: 10px">
+            A. Configuration Logic
+          </h4>
+          <p style="color: #d6d6d6; font-size: 0.95rem; margin-bottom: 0">
+            <strong>Challenge:</strong> Aligning "States" with actionable
+            "Transitions" without creating dead ends. <br /><br />
+            <strong>Solution:</strong> Meticulously mapped the Next State rules
+            and manually linked the Workflow State Field to my existing status
+            field, ensuring the visual frontend dropdown updated perfectly with
+            the backend logic.
+          </p>
+        </div>
+
+        <!-- Challenge B -->
+        <div
+          style="
+            flex: 1 1 250px;
+            background: #2b2b2c;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #383838;
+          "
+        >
+          <h4 style="color: #fafafa; margin-top: 0; margin-bottom: 10px">
+            B. Validation Errors
+          </h4>
+          <p style="color: #d6d6d6; font-size: 0.95rem; margin-bottom: 0">
+            <strong>Challenge:</strong> Encountered a mandatory field error
+            ("Only Allow Edit For") when trying to lock the "Resolved" state.
+            <br /><br />
+            <strong>Solution:</strong> Discovered that Frappe requires a role
+            assignment even for read-only states to satisfy validation. Assigned
+            the Organization Staff role to clear the error and successfully lock
+            the document.
+          </p>
+        </div>
+
+        <!-- Challenge C -->
+        <div
+          style="
+            flex: 1 1 250px;
+            background: #2b2b2c;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #383838;
+          "
+        >
+          <h4 style="color: #fafafa; margin-top: 0; margin-bottom: 10px">
+            C. Permission Testing
+          </h4>
+          <p style="color: #d6d6d6; font-size: 0.95rem; margin-bottom: 0">
+            <strong>Challenge:</strong> Action buttons (like "Start Work")
+            failed to appear on the interface despite having an Administrator
+            account. <br /><br />
+            <strong>Solution:</strong> Realized the Workflow engine checks for
+            exact roles, not just admin privileges. Navigated to the User List,
+            manually assigned the Organization Staff role to my account, and
+            successfully executed the workflow.
+          </p>
+        </div>
+      </div>
+
+      <!-- Section 8: Conclusion -->
+      <h3 style="color: #fafafa; font-size: 1.4rem; margin-bottom: 15px">
+        Implementation Status
+      </h3>
+      <p style="margin-bottom: 0">
+        The feature has been successfully deployed. The application now features
+        dynamic "Action" buttons that replace the standard save functionality.
+        This implementation significantly enhances the reliability of the
+        Community Issue Tracker, transforming it from a simple data entry form
+        into a highly managed, professional workflow system.
+      </p>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

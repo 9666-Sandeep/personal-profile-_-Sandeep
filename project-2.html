@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Quality Dashboard - Chinthal Sandeep</title>
+
+    <!-- Links to your existing portfolio styling -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="
+      background-color: #121212;
+      color: #d6d6d6;
+      font-family: &quot;Poppins&quot;, sans-serif;
+      padding: 40px 20px;
+    "
+  >
+    <!-- Added display: block; here to prevent the template from turning text into columns -->
+    <main
+      style="
+        display: block;
+        max-width: 900px;
+        margin: 0 auto;
+        background: #1e1e1f;
+        padding: 40px;
+        border-radius: 14px;
+        border: 1px solid #383838;
+      "
+    >
+      <!-- Back to Portfolio Button -->
+      <a
+        href="./index.html"
+        style="
+          display: inline-block;
+          color: #ffdb70;
+          text-decoration: none;
+          border: 1px solid #ffdb70;
+          padding: 8px 16px;
+          border-radius: 8px;
+          margin-bottom: 30px;
+          transition: 0.3s;
+        "
+      >
+        &larr; Back to Portfolio
+      </a>
+
+      <!-- Metadata Box -->
+      <div
+        style="
+          background: #2b2b2c;
+          padding: 20px;
+          border-radius: 12px;
+          margin-bottom: 40px;
+          border: 1px solid #383838;
+        "
+      >
+        <p style="margin-bottom: 10px">
+          <strong>Project Name:</strong> Indian Air Quality Insights Dashboard
+        </p>
+        <p style="margin-bottom: 10px">
+          <strong>Focus Area:</strong> Environmental Data Analysis & Public
+          Health Visualization
+        </p>
+        <p style="margin-bottom: 10px">
+          <strong>Author:</strong> Chinthal Sandeep
+        </p>
+        <p style="margin-bottom: 0">
+          <strong>Interactive Dashboard:</strong><br />
+          <a
+            href="https://frappe.apucomputing.in/insights/workbook/142/query/20frl27sl0"
+            target="_blank"
+            style="color: #ffdb70; text-decoration: underline"
+            >View Live APU Insights Workbook</a
+          >
+        </p>
+      </div>
+
+      <!-- Section 1: Overview -->
+      <h2 style="color: #ffdb70; margin-bottom: 15px">Project Overview</h2>
+      <p style="margin-bottom: 30px">
+        Air pollution is one of the most pressing environmental challenges in
+        contemporary India. To understand this complex issue, I designed and
+        built an interactive <strong>Air Quality Dashboard</strong> using the
+        Frappe Insights platform. The dashboard transforms raw environmental
+        measurements into an intuitive, visual narrative, allowing everyday
+        users and researchers alike to discover, explore, and compare air
+        quality patterns across Indian cities and states.
+      </p>
+
+      <!-- Section 2: About the Data -->
+      <h2 style="color: #ffdb70; margin-bottom: 15px">About the Dataset</h2>
+      <div style="margin-bottom: 40px">
+        <p style="margin-bottom: 15px">
+          The foundation of any good analysis is reliable data. For this
+          project, I used an official, comprehensive dataset sourced from
+          <a
+            href="https://data.gov.in"
+            target="_blank"
+            style="color: #ffdb70; text-decoration: underline"
+            >data.gov.in</a
+          >, the government of India's open data platform.
+        </p>
+        <p style="margin-bottom: 15px">
+          Using a verified government dataset ensured that the insights
+          generated would be grounded in reality and trustworthy. This raw
+          dataset contained detailed parameters including:
+        </p>
+        <ul style="color: #d6d6d6; padding-left: 20px; margin-top: 10px">
+          <li style="margin-bottom: 8px">
+            Comprehensive city and state-level geographic labeling.
+          </li>
+          <li style="margin-bottom: 8px">
+            Specific timestamps and dates for each sampling interval.
+          </li>
+          <li style="margin-bottom: 8px">
+            Individual air quality and Air Quality Index (AQI) metric
+            evaluations.
+          </li>
+          <li style="margin-bottom: 0">
+            Specific tracking of various particulate matter and gaseous
+            pollutant averages.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Section 3: Design & Implementation -->
+      <h2 style="color: #ffdb70; margin-bottom: 15px">
+        Dashboard Design & User Experience
+      </h2>
+      <p style="margin-bottom: 20px">
+        My main goal was to move away from overly complex, intimidating
+        spreadsheets and instead create a tool that was highly engaging, visual,
+        and simple for anyone to interact with. By structuring the dashboard in
+        a natural visual hierarchy, users can immediately get a high-level
+        summary before diving deeper into specific regions or data points.
+      </p>
+
+      <!-- Section 4: Key Parts Broken Down -->
+      <h3
+        style="
+          color: #fafafa;
+          font-size: 1.4rem;
+          margin-top: 30px;
+          margin-bottom: 20px;
+        "
+      >
+        Analyzing the Core Components:
+      </h3>
+      <ul style="list-style-type: none; padding-left: 0; margin-bottom: 40px">
+        <li style="margin-bottom: 25px">
+          <strong
+            style="
+              color: #ffdb70;
+              font-size: 1.1rem;
+              display: block;
+              margin-bottom: 8px;
+            "
+            >1. High-Level Summary Metrics (Cards)</strong
+          >
+          <span
+            >Placed prominently at the very top, these indicator cards are
+            designed for instant, glanceable insight. The
+            <strong>Station Count</strong> card gives users an immediate sense
+            of the data scale. Beside it, the
+            <strong>Average Pollutant</strong> indicator highlights the overall
+            scale of environmental concern.</span
+          >
+        </li>
+        <li style="margin-bottom: 25px">
+          <strong
+            style="
+              color: #ffdb70;
+              font-size: 1.1rem;
+              display: block;
+              margin-bottom: 8px;
+            "
+            >2. City Comparison (Bar Chart)</strong
+          >
+          <span
+            >To compare and rank the diverse locations, I designed a vertical
+            Bar Chart. Bar charts are incredibly effective for this type of
+            categorization, as the human eye can instantly compare the lengths
+            to see which cities suffer from the highest and lowest AQI
+            levels.</span
+          >
+        </li>
+        <li style="margin-bottom: 25px">
+          <strong
+            style="
+              color: #ffdb70;
+              font-size: 1.1rem;
+              display: block;
+              margin-bottom: 8px;
+            "
+            >3. State-wise Monitoring Footprint (Pie Chart)</strong
+          >
+          <span
+            >I integrated a Pie Chart tracking State-wise Station Count, helping
+            users recognize the density of tracking efforts. Visualizing the
+            proportion of stations across states helps demonstrate where focus
+            and infrastructure on environmental monitoring are heaviest.</span
+          >
+        </li>
+        <li style="margin-bottom: 0">
+          <strong
+            style="
+              color: #ffdb70;
+              font-size: 1.1rem;
+              display: block;
+              margin-bottom: 8px;
+            "
+            >4. Detailed Proportions (Data Table)</strong
+          >
+          <span
+            >At the base, I embedded a Pollutant Proportion and Average Table.
+            This allows users to drill down, verify numbers, and locate
+            high-density pollution records by hand, finding specific peaks that
+            might otherwise get hidden within aggregate averages.</span
+          >
+        </li>
+      </ul>
+
+      <!-- Section 5: Interaction -->
+      <h2 style="color: #ffdb70; margin-bottom: 15px">
+        Interactive Explorations and User Control
+      </h2>
+      <p style="margin-bottom: 15px">
+        An interactive dashboard must empower the user to find their own
+        answers. To achieve this, I built and configured two essential
+        interactive Filters:
+      </p>
+      <ul
+        style="
+          color: #d6d6d6;
+          padding-left: 20px;
+          margin-bottom: 30px;
+          margin-top: 10px;
+        "
+      >
+        <li style="margin-bottom: 10px">
+          <strong>Pollutant Type:</strong> Allows users to hone in on specific
+          gases and particles (like PM2.5, PM10, or NO2).
+        </li>
+        <li style="margin-bottom: 10px">
+          <strong>State/Geographic Filter:</strong> Lets users isolate only the
+          cities within a particular State of interest.
+        </li>
+      </ul>
+      <p style="margin-bottom: 0">
+        Ultimately, this project highlights how open data and intuitive
+        dashboard tools like Frappe Insights can be bridged to create public
+        tools. By translating complicated rows and columns of environmental
+        statistics into a readable story, we give citizens the visibility they
+        need to understand the invisible air around them.
+      </p>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

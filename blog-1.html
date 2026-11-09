@@ -25,7 +25,7 @@
         line-height: 1.6;
       }
       .blog-container {
-        max-width: 720px;
+        max-width: 1200px;
         margin: 0 auto;
         padding: 40px 20px;
       }
@@ -84,9 +84,12 @@
         text-align: center;
       }
       .post-figure img {
-        max-width: 100%;
+        width: 100%; /* Tells the image to fill the available space */
+        max-width: 1000px; /* Change this number to control the exact maximum size */
         border-radius: 8px;
         height: auto;
+        display: block;
+        margin: 0 auto;
       }
       .post-figcaption {
         font-family: "Inter", sans-serif;
